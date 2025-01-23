@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="description" content="ture the Night City">
+    <meta name="author" content="Svetozár Szanto">
+    <meta name="keywords" content="Night City, NC, tour">
+   
+    <title>NightCity</title>
+    <link rel="stylesheet" href="./Gallery.css">
+    <link rel="icon" href="./NCimages//">
+    <link rel="stylesheet" href="photoswipe.css">
+
+</head>
+<body>
+   
+<header>
+    <nav>
+        <a href="./tourTheNC.html">tour the Night City</a>
+        <a href="#">NCNewsletter</a>
+        <a href="#">Calendar</a>
+        <a href="#">Contacts</a>
+    </nav>
+</header>
+ 
+<section id="banner">
+    <div class="content">
+        <h1>Night City Through the Lens:</h1>
+        <p>
+            Enjoy the views of Night City
+        </p>
+    </div>
+</section>
+
+<div id = gallery>
+<div class="content">
+    <a href="img\\resized\\1920_NC_test_image.jpg">
+        <picture>
+            <source type="image/avif" srcset="img\\resized\\256_NC_test_image.avif 1x, img\\resized\\256_NC_test_image.avif 2x">
+            <img src="img\\resized\\NC_test_image.jpg" width="192" height="192" srcset="img\\resized\\256_NC_test_image.jpg 1x, img\\resized\\256_NC_test_image.jpg 2x" 
+            loading="lazy" decoding="async" alt="NC_test_image.jpg">
+        </picture>
+    </a>
+
+</div>
+</div>
+ 
+<Script type="module">
+    import PhotoSwipeLightbox from './photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: () => import('./photoswipe.esm.js')
+    });
+    lightbox.init();
+</Script>
+ 
+<footer>
+    <div class="content">
+        <a href="#">Calendar</a>
+        <a href="#">Contacts</a>
+        <a href="#">TourTheNightCity@instagram.nc</a>
+    </div>
+</footer> 
+ 
+</body>
+</html>

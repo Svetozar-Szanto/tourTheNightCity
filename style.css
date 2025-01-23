@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    font-family: "Zen Dots", serif;
+    background-color: #050A0E;
+    text-align: center;
+    padding: 22px 0;
+
+}
+
+header a {
+    font-size: 20px;
+    padding: 35px;
+    margin: 0 20px;
+    color: #00F0FF;
+}
+
+header a:hover{
+    color: #FF003C;
+}
+
+#banner {
+    background-image: url("NCimages/bannerCityCenter.webp");
+    background-size: cover;
+    padding: 210px ;
+    color: #FCEE09;
+    text-align: center;
+    text-shadow: 
+    1px 1px 0px black,
+    -1px -1px 0px black,
+    1px -1px 0px black,
+    -1px 1px 0px black;
+}
+
+#banner h1 {
+    font-family: "audiowide", serif;
+    font-size: 35px;
+    padding-bottom: 13px;
+}
+
+#banner p {
+    font-family: "audiowide", serif;
+    font-size: 23px;
+}
+
+#description {
+    background-color: #FCEE09;
+    text-align: left;
+    color: #050A0E;
+    padding: 50px 0;
+}
+
+#description h2 {
+    font-family: "Zen dots", serif;
+    font-size: 35px;
+    color: #050A0E;
+    padding: 0 0 30px;
+}
+
+#description p {
+    font-size: 22px;
+    color: #050A0E;
+    padding-right: 225px;
+}
+
+#districts {
+    background-color: #050A0E;
+    color: #FF003C;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+#districts h3{
+    font-family: "Zen Dots", serif;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+#districts p{
+    font-size: 22px;
+    padding-top: 25px;
+}
+
+#districts article {
+    padding: 30px 0;
+}
+
+#districts .content .leftSide {
+    display: grid; /* layout of  the page */
+    grid-template-columns:  40% 60%;
+    
+}
+
+#districts .content .rightSide {
+    display: grid; /* layout of  the page */
+    grid-template-columns:  60% 40%;
+}
+
+footer{
+    background-color: #00F0FF;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+footer a {
+    font-family: "Zen Dots", serif;
+    font-size: 20px;
+    padding: 35px;
+    margin: 0 20px;
+    color: #050A0E;
+}
+
+footer a:hover{
+    color: #FAFAFA;
+}
